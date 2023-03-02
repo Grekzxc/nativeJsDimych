@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { sum } from './hello_test/01';
 
+
+// let hop = sum
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
