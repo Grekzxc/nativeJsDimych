@@ -1,4 +1,4 @@
-type TechnologiesType={
+type TechnologiesType = {
     id: number
     title: string
 }
@@ -6,7 +6,7 @@ type LokalCityType = {
     title: string
     countryTitle: string
 }
-type AddressType={
+type AddressType = {
     streetTitle: string
     city: LokalCityType
 }

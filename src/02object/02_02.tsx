@@ -1,4 +1,5 @@
 export type HousesType = {
+    id?: number
     buildedAt: number
     repaired: boolean
     address: AddressType
@@ -22,6 +23,7 @@ export type CityType = {
     houses: Array<HousesType>
     governmentBuildings: Array<GovernmentBuildingsType>
     citizensNumber: number
-} 
+}
+
 
 

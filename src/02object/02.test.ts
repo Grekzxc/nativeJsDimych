@@ -1,6 +1,6 @@
 import { title } from "process";
 import { CityType, HousesType, StreetType, AddressType } from "./02_02";
-import { GovernmentBuildingsType} from "./02_02";
+import { GovernmentBuildingsType } from "./02_02";
 
 
 let city: CityType;
@@ -9,9 +9,21 @@ beforeEach(() => {
     city = {
         title: "New York",
         houses: [],
-        governmentBuildings: [{type: "HOSPITAL", budget: 200000, staffCount: 200, address: {street: {title: "Central Str"}}},
-        {type: "FIRE-STATION", budget: 500000, staffCount: 1000, address: {street: {title: "South Str"}}}
-        ],
+        governmentBuildings:
+            [
+                {
+                    type: "HOSPITAL",
+                    budget: 200000,
+                    staffCount: 200,
+                    address: { street: { title: "Central Str" } }
+                },
+                {
+                    type: "FIRE-STATION",
+                    budget: 500000,
+                    staffCount: 1000,
+                    address: { street: { title: "South Str" } }
+                }
+            ],
         citizensNumber: 1000000
     }
 })

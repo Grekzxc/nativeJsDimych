@@ -1,31 +1,31 @@
-import { GovernmentBuildingsType, CityType, HousesType } from './../02object/02_02';
+import { GovernmentBuildingsType, CityType, HousesType } from '../02object/02_02';
 import { StudentType } from "../02object/02"
 
 
 
 
-export const addSkill = (student: StudentType, skill: string) =>{
+export const addSkill = (student: StudentType, skill: string) => {
     student.technologies.push({
         id: new Date().getTime(),
         title: skill
     })
 }
 
-export function doesStudentLiveIn(s: StudentType, cityName: string){
+export function doesStudentLiveIn(s: StudentType, cityName: string) {
     return s.address.city.title === cityName
 }
 
-export const addMoneyToBudget = (Building:GovernmentBuildingsType, budget: number)=>{
-    Building.budget+=budget
+export const addMoneyToBudget = (Building: GovernmentBuildingsType, budget: number) => {
+    Building.budget += budget
 }
 
-export const repairHouse =(HousesType: HousesType)=>{
+export const repairHouse = (HousesType: HousesType) => {
     HousesType.repaired = true
 }
-export const toFireStaff =(bilding:GovernmentBuildingsType,staffCountToFire: number)=>{
+export const toFireStaff = (bilding: GovernmentBuildingsType, staffCountToFire: number) => {
     bilding.staffCount -= staffCountToFire
 }
-export const toHireStaff =(bilding:GovernmentBuildingsType,staffCountToHire: number)=>{
+export const toHireStaff = (bilding: GovernmentBuildingsType, staffCountToHire: number) => {
     bilding.staffCount += staffCountToHire
 }
 
